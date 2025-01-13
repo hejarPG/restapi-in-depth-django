@@ -23,6 +23,6 @@ class UserList(generics.ListAPIView):
     serializer_class = UserSerializer
     
 
-class UserList(generics.RetrieveAPIView):
+class UserDetail(generics.RetrieveAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
